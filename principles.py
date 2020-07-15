@@ -1,6 +1,6 @@
 class Stoic_Principles:
     """Repository of Major Stoic Principles."""
-    
+
     def __init__(self):
         self.principles = {
             'Principle 1': 'Wake up early.' ,
@@ -11,6 +11,9 @@ class Stoic_Principles:
             'Principle 5': 'Memento mori: Remember death.' ,
             'Principle 6': 'Picture life without the people and '\
                 'possessions you have to truly appreciate them.' ,
+            'Principle 7': 'Go on long walks.' ,
+            'Principle 8': 'Reflect on the good and bad at the '\
+                'end of each day.' ,
         }
     
     def display(self):
