@@ -1,6 +1,6 @@
 class Daily_Reflection:
     """Performs daily reflection task based on user input."""
-    
+     
     def __init__(self):
         self.improvements = []
         user_input = input('What went wrong today? What can you improve on? ')
@@ -17,11 +17,13 @@ class Daily_Reflection:
             return False
 
     def file_writer(self):
+        """Record reflection in file."""
         with open('reflections.txt', 'a') as file:
             for i in self.improvements:
                 file.write(i + '\n')
     
     def log_writer(self):
+        """Log time of reflection."""
         from datetime import datetime
         time = datetime.today()
         year, month, day = time.year, time.month, time.day
