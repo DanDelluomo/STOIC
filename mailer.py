@@ -15,7 +15,7 @@ class Email:
     def send(self):
         display_string = principles.Stoic_Principles().display()
         print("SENDING: ", display_string)
-        server_ssl.sendmail(self. username, self. username, 
+        server_ssl.sendmail(self.username, self.username, 
                             display_string)
 
     def end_mailserver(self):
