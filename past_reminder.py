@@ -6,7 +6,7 @@ class PastReminder:
         self.reflections = [i for i in reflections]
     
     def cycle(self):
-        """Print each reflection."""
+        """Print each reflection and take user input."""
         print('\n')
         reflections = {}
         for reflection in self.reflections:
