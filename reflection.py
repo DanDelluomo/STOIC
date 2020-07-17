@@ -1,4 +1,4 @@
-class Daily_Reflection:
+class DailyReflection:
     """Performs daily reflection task based on user input."""
      
     def __init__(self):
@@ -38,7 +38,7 @@ class Daily_Reflection:
         
 
 if __name__ == '__main__':
-    daily_reflect = Daily_Reflection()
+    daily_reflect = DailyReflection()
     while daily_reflect.extra_grabber() is not False:
         daily_reflect.extra_grabber()
     # record improvements       

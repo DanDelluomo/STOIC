@@ -1,4 +1,4 @@
-class Stoic_Principles:
+class StoicPrinciples:
     """Repository of Major Stoic Principles."""
 
     def __init__(self):
@@ -25,5 +25,5 @@ class Stoic_Principles:
 
 
 if __name__ == '__main__':
-    principles = Stoic_Principles()
+    principles = StoicPrinciples()
     principles.display()

@@ -1,4 +1,4 @@
-class Past_Reminder:
+class PastReminder:
     """Cycle through past daily reflections."""  
     
     def __init__(self):
@@ -13,7 +13,7 @@ class Past_Reminder:
 
 
 if __name__ == '__main__':
-    reminders = Past_Reminder()
+    reminders = PastReminder()
     reminders.cycle()
 
 

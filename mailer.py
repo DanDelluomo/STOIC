@@ -22,7 +22,7 @@ class Email:
         return emails
 
     def send(self, email_list):
-        display_string = principles.Stoic_Principles().display() 
+        display_string = principles.StoicPrinciples().display() 
         for address in email_list:
             print("SENDING TO: ", address)
             server_ssl.sendmail(self.username, address, display_string)
