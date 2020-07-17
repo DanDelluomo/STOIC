@@ -7,8 +7,8 @@ class PastReminder:
     
     def cycle(self):
         """Print each reflection and take user input."""
-        print('\n')
         self.analysis = {}
+        print('\n')
         for reflection in self.reflections:
             print('Ponder this...' + '\n' + reflection)
             self.analysis[reflection] = input('Have you improved this? ')
