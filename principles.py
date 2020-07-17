@@ -6,9 +6,9 @@ class Stoic_Principles:
             'Principle 1': 'Wake up early.' ,
             'Principle 2': 'Manage your expectations. Expect '\
                 'unexpected hardships.' ,
-            'Principle 3': 'Amor fati: Love fate.' ,
+            'Principle 3': 'Amor fati. Love fate.' ,
             'Principle 4': 'Find the good in everything.' ,
-            'Principle 5': 'Memento mori: Remember death.' ,
+            'Principle 5': 'Memento mori. Remember death.' ,
             'Principle 6': 'Picture life without the people and '\
                 'possessions you have to truly appreciate them.' ,
             'Principle 7': 'Go on long walks.' ,
@@ -17,8 +17,11 @@ class Stoic_Principles:
         }
     
     def display(self):
+        display_string = ''
         for principle in self.principles:
-            print(principle + ': ' + self.principles[principle])
+            display_string += principle.upper() + '   '
+            display_string += self.principles[principle] + '\n'
+        return display_string
 
 
 if __name__ == '__main__':
