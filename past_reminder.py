@@ -8,10 +8,13 @@ class PastReminder:
     def cycle(self):
         """Print each reflection."""
         print('\n')
+        reflections = {}
         for reflection in self.reflections:
-            print(reflection)
-
-
+            print('Ponder this...' + '\n' + reflection)
+            reflections[reflection] = input('Have you improved this? ')
+        return reflections
+        
+        
 if __name__ == '__main__':
     reminders = PastReminder()
     reminders.cycle()
